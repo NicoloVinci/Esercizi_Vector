@@ -18,7 +18,10 @@ int main()
     {
         zombies.push_back(dis(gen));
     }
+    int rounds = 0;
     do {
+        rounds++;
+        cout << "Round " << rounds << ":" << endl;
         for (int i = 0; i < zombies.size(); i++)
         {
             cout << "Zombie " << i + 1 << ": " << zombies[i] << " health" << endl;
